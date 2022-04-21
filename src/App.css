@@ -181,6 +181,10 @@ table {
         overflow: hidden;
         overflow-y: scroll;
         -webkit-overflow-scrolling:touch;
+        transition: height 1000000s ease;
+-webkit-transition: height 1000000s ease;
+-moz-transition: height 1000000s ease;
+-o-transition: height 1000000s ease;
       }
 
       html {
