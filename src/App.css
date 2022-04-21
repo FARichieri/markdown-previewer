@@ -180,16 +180,15 @@ table {
         height: 100%;
         overflow: hidden;
         overflow-y: scroll;
+        -webkit-overflow-scrolling:touch;
       }
 
-      * {
-        box-sizing: border-box;
-        user-select: none;
-        -webkit-user-select: none;  /* Chrome all / Safari all */
-        -moz-user-select: none;     /* Firefox all */
-        -ms-user-select: none;      /* IE 10+ */
-        user-select: none;  
-    }
+      html {
+          height: 100%;
+          overflow: hidden;
+      }
+
+
 
 
 }
