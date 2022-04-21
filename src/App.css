@@ -1,5 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -14,13 +15,10 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
 	font-size: 100%;
 	vertical-align: baseline;
-	font-family: 'Orbitron', sans-serif;
-    text-align: center;
+    font-family: 'Electrolize', sans-serif;
+    letter-spacing: .1rem;
 }
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -28,13 +26,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    font-size: 2rem;
-    user-select: none;
-    -webkit-user-select: none;  
-    -moz-user-select: none;     
-    -ms-user-select: none;      
-    user-select: none;  
-    font-family: 'Orbitron', sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -42,35 +33,141 @@ body {
     height: 100vh;
     width: 100vw;
     border-style: none;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 500px;
+    background-color: rgb(55, 55, 55);
+    background-image: url("https://cloudoki.com/content/images/size/w2000/2015/07/modern_architecture_3-wallpaper-1680x1260.jpg");
 }
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
-button {
-	font-family: 'Orbitron', sans-serif;
+* {
+    box-sizing: border-box;
+}
+
+/* Project */
+
+.quote-box {
+    text-align: center;
 }
 
 #editor {
-    width: 500px;
-    height: 100px;
+    width: 60%;
+    height: 120px;
+    min-width: 400px;
+    min-height: 50px;
+    padding-top: 5px;
+    resize: vertical;
+    outline: none;
+    padding-left: 5px;
+    font-size: 1rem;
+    background-color: rgba(100, 100, 100, 0.98);
+    color: white;
+    border: 1px solid black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
 }
 
-#preview {
-    border: 1px solid black;
-    width: 500px;
-    height: 100px;
+.cleaner {
+    display: flex;
     margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.496);
+    font-family: 'Electrolize', sans-serif;
+    font-weight: bolder;
+    border-radius: 0 0 5px 5px;
+    cursor: pointer;
+    transition: .3s;
 }
+
+.cleaner:hover {
+    background-color: rgba(255, 255, 255, 0.977);
+}
+
+
+#preview {
+    padding-top: 5px;
+    width: 60%;
+    min-height: 100px;
+    height: 90%;
+    margin: 0 auto;
+    min-width: 400px;
+    text-align: left;
+    padding: 0 1rem;
+    background-color: rgba(100, 100, 100, 0.98);
+    color: white;
+    border: 1px solid black;
+}
+
+.toolbar {
+    display:flexbox;
+    justify-content: center;
+    width: 60%;
+    min-width: 400px;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}
+
+/* Markdown */
+
+  #preview blockquote {
+    border-left: 3px solid black;
+    color: black;
+    padding-left: 5px;
+    margin-left: 25px;
+  }
+  #preview > p > code {
+    padding: 3px;
+  }
+  #preview code {
+    background: rgb(29, 28, 28);
+    font-size: 0.875rem;
+    font-weight: bold;
+    font-family: 'Consolas', sans-serif;
+  }
+  #preview pre {
+    display: block;
+    overflow: auto;
+    background: rgb(29, 28, 28);
+    padding: 5px;
+    line-height: 1.2;
+  }
+  #preview h1 {
+    border-bottom: 2px solid black;
+  }
+  #preview h2 {
+    border-bottom: 1px solid black;
+  }
+  #preview table {
+    border-collapse: collapse;
+  }
+  #preview td,
+  #preview th {
+    border: 2px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #preview img {
+    display: block;
+    max-width: 90%;
+    margin: 2rem auto;
+  }
+
+  #preview a {
+      transition: .3s;
+  }
+  #preview a:hover {
+      color: white;
+  }
+/* End Markdown */
