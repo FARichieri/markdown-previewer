@@ -174,14 +174,17 @@ table {
 
 @media only screen and (max-width: 600px) {
     html {
+        margin: 0; 
+        height: 100%;
         overflow: hidden;
         width: 100%;
       }
       
       body {
         font-size: .8rem;
-        margin: 0;
+        margin: 0; 
         height: 100%;
+        overflow: hidden;
         position: fixed;
         /* prevent overscroll bounce*/
         background-color: lightgreen;
@@ -189,4 +192,7 @@ table {
         -webkit-overflow-scrolling: touch;
         /* iOS velocity scrolling */
       }
+
+
+
 }
