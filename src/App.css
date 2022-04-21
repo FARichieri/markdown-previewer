@@ -30,7 +30,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    height: 100vh;
+    height: 90vw;
     width: 100vw;
     border-style: none;
     line-height: 1.5;
@@ -176,5 +176,7 @@ table {
     body {
         font-size: .8rem;
         margin: auto;
+        min-height:100vh;
+
     };
 }
