@@ -173,10 +173,20 @@ table {
 /* End Markdown */
 
 @media only screen and (max-width: 600px) {
-    body {
+    html {
+        overflow: hidden;
+        width: 100%;
+      }
+      
+      body {
         font-size: .8rem;
         margin: auto;
-        min-height:100vh;
-
-    };
+        height: 100%;
+        position: fixed;
+        /* prevent overscroll bounce*/
+        background-color: lightgreen;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        /* iOS velocity scrolling */
+      }
 }
