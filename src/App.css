@@ -31,7 +31,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     height: 90vw;
-    width: 100vw;
+    width: 99%;
     border-style: none;
     line-height: 1.5;
     font-weight: 400;
@@ -68,11 +68,12 @@ table {
     outline: none;
     padding-left: 5px;
     font-size: 1rem;
-    background-color: rgba(100, 100, 100, 0.98);
+    background-color: rgba(135, 145, 41, 0.98);
     color: white;
     border: 1px solid black;
     font-family: 'Courier New', Courier, monospace;
     font-weight: lighter;
+    box-shadow: 0 0 5px 2px rgb(5, 5, 5);
 }
 
 .cleaner {
@@ -87,6 +88,8 @@ table {
     border-radius: 0 0 5px 5px;
     cursor: pointer;
     transition: .3s;
+    box-shadow: 0 0 5px 2px rgb(5, 5, 5);
+    text-shadow: 0 0 1px rgb(0, 0, 0);
 }
 
 .cleaner:hover {
@@ -103,9 +106,10 @@ table {
     min-width: 350px;
     text-align: left;
     padding: 0 1rem;
-    background-color: rgba(100, 100, 100, 0.98);
+    background-color: rgba(135, 145, 41, 0.98);
     color: white;
     border: 1px solid black;
+    box-shadow: 0 0 5px 2px rgb(5, 5, 5);
 }
 
 .toolbar {
@@ -114,9 +118,11 @@ table {
     width: 60%;
     min-width: 350px;
     margin: 0 auto;
-    border: 1px solid black;
-    background-color: black;
+    border: 1px solid rgba(0, 0, 0, 0.891);
+    background-color: rgba(0, 0, 0, 0.891);
     color: white;
+    box-shadow: 0 0 5px 2px rgb(5, 5, 5);
+    text-shadow: 0 0 5px rgb(255, 255, 255);
 }
 
 /* Markdown */
@@ -162,6 +168,8 @@ table {
     display: block;
     max-width: 90%;
     margin: 2rem auto;
+    border-radius: 50px;
+    opacity: .9;
   }
 
   #preview a {
