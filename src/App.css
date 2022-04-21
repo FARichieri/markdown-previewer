@@ -180,7 +180,7 @@ table {
       
       body {
         font-size: .8rem;
-        margin: auto;
+        margin: 0;
         height: 100%;
         position: fixed;
         /* prevent overscroll bounce*/
