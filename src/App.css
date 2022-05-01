@@ -74,6 +74,8 @@ table {
     font-family: 'Courier New', Courier, monospace;
     font-weight: lighter;
     box-shadow: 0 0 5px 2px rgb(5, 5, 5);
+    animation-name: appear;
+    animation-duration: 2s;
 }
 
 .cleaner {
@@ -90,6 +92,8 @@ table {
     transition: .3s;
     box-shadow: 0 0 5px 2px rgb(5, 5, 5);
     text-shadow: 0 0 1px rgb(0, 0, 0);
+    animation-name: appear;
+    animation-duration: 2s;
 }
 
 .cleaner:hover {
@@ -110,6 +114,8 @@ table {
     color: white;
     border: 1px solid black;
     box-shadow: 0 0 5px 2px rgb(5, 5, 5);
+    animation-name: appear;
+    animation-duration: 2s;
 }
 
 .toolbar {
@@ -123,6 +129,8 @@ table {
     color: white;
     box-shadow: 0 0 5px 2px rgb(5, 5, 5);
     text-shadow: 0 0 5px rgb(255, 255, 255);
+    animation-name: appear;
+    animation-duration: 2s;
 }
 
 /* Markdown */
@@ -194,8 +202,9 @@ table {
           height: 100vh;
           overflow: hidden;
       }
+}
 
-
-
-
+@keyframes appear {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
